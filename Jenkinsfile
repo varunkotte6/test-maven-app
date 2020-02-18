@@ -7,9 +7,9 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('error') {
       steps {
-        archiveArtifacts 'C:\\Program Files (x86)\\Jenkins\\workspace\\test-maven-app_master\\target\\*'
+        archiveArtifacts 'target\\*'
       }
     }
 
