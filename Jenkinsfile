@@ -15,7 +15,7 @@ pipeline {
 
     stage('ssh') {
       steps {
-        sshPublisher(masterNodeName: '10.29.42.141')
+        bat 'scp -r dist pdaus@10.29.42.141:/home/pdaus/'
       }
     }
 
