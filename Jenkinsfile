@@ -15,7 +15,7 @@ pipeline {
 
     stage('ssh') {
       steps {
-        bat 'scp -r dist pdaus@10.29.42.141:/home/pdaus/'
+        powershell 'scp -r target/* pdaus@10.29.42.46:/home/pdaus/jars/'
       }
     }
 
