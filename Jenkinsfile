@@ -13,5 +13,11 @@ pipeline {
       }
     }
 
+    stage('ssh') {
+      steps {
+        sshPublisher(masterNodeName: '10.29.42.141')
+      }
+    }
+
   }
 }
