@@ -15,7 +15,7 @@ pipeline {
 
     stage('ssh') {
       steps {
-        powershell 'winscp -r target/* pdaus@10.29.42.46:/home/pdaus/jars/'
+        pwsh 'scp -r target/* pdaus@10.29.42.46:/home/pdaus/jars/'
       }
     }
 
