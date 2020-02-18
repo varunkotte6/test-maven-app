@@ -19,5 +19,11 @@ pipeline {
       }
     }
 
+    stage('codessh') {
+      steps {
+        powershell 'scp -r src/* pdaus@10.29.42.46:/home/pdaus/code'
+      }
+    }
+
   }
 }
